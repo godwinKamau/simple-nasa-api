@@ -1,10 +1,13 @@
 //The user will enter a date. Use that date to get the NASA picture of the day from that date! https://api.nasa.gov/
 const apiKey = 'x0mNIIVGc9fATQ9wSrqVqjvtkGCTUF0Rb0OigrRg'
+let audio = document.querySelector('audio')
 
 
 document.querySelector('button').addEventListener('click',loadPhoto)
 
 function loadPhoto() {
+   audio.volume=.2
+   audio.play()
     const input = document.querySelector('input').value
     console.log(input)
     const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${input}`
