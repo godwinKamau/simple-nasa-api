@@ -1,0 +1,46 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body {
+  background-image: url('../img/pexels-minan1398-813269.jpg');
+  background-size: cover;
+  color:white;  
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.words{
+  text-align: center;
+  padding:15px;
+}
+
+img{
+  display: block;
+  margin: 0 auto;
+  height: 700px;
+  display:none;
+}
+
+iframe {
+  height:700px;
+  width:800px;
+  display:none
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
